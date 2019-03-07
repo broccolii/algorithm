@@ -1,4 +1,4 @@
-# [141. Add Two Numbers (Medium)](https://leetcode.com/problems/add-two-numbers/)
+# [2. Add Two Numbers (Medium)](https://leetcode.com/problems/add-two-numbers/)
 
 ## Description
 
@@ -46,7 +46,4 @@ class Solution {
         return dummy.next;
     }
 }
-
-
-
 ```
