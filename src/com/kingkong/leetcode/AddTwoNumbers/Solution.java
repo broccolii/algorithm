@@ -1,4 +1,6 @@
-package DataStructure.LinkedList;
+package com.kingkong.leetcode.AddTwoNumbers;
+
+import DataStructure.LinkedList.ListNode;
 
 public class AddTwoNumbers {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {

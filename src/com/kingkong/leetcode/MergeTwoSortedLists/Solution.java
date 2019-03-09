@@ -1,4 +1,6 @@
-package DataStructure.LinkedList;
+package com.kingkong.leetcode.MergeTwoSortedLists;
+
+import DataStructure.LinkedList.ListNode;
 
 public class MergeTwoSortedLists {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {

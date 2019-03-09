@@ -1,4 +1,6 @@
-package DataStructure.LinkedList;
+package com.kingkong.leetcode.LinkedListCycle;
+
+import DataStructure.LinkedList.ListNode;
 
 import java.util.HashSet;
 import java.util.Set;

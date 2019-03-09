@@ -1,4 +1,6 @@
-package DataStructure.LinkedList;
+package com.kingkong.leetcode.RemoveLinkedListElements;
+
+import DataStructure.LinkedList.ListNode;
 
 public class RemoveLinkedListElements {
     public ListNode removeElements(ListNode head, int val) {

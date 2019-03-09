@@ -1,4 +1,6 @@
-package DataStructure.LinkedList;
+package com.kingkong.leetcode.DeleteNodeInALinkedList;
+
+import DataStructure.LinkedList.ListNode;
 
 public class DeleteNodeInALinkedList {
     public void deleteNode(ListNode node) {
