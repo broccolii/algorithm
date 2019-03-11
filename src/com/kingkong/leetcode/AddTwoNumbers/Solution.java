@@ -2,7 +2,7 @@ package com.kingkong.leetcode.AddTwoNumbers;
 
 import DataStructure.LinkedList.ListNode;
 
-public class AddTwoNumbers {
+public class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int carry = 0;
         ListNode dummy = new ListNode(0), p = dummy;
