@@ -1,6 +1,8 @@
-package DataStructure.LinkedList;
+package com.kingkong.leetcode.ReverseLinkedList;
 
-public class ReverseLinkedList {
+import DataStructure.LinkedList.ListNode;
+
+public class Solution {
 
     // 迭代实现
     public ListNode reverse01(ListNode head) {
