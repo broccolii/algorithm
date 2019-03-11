@@ -2,7 +2,7 @@ package com.kingkong.leetcode.MergeTwoSortedLists;
 
 import DataStructure.LinkedList.ListNode;
 
-public class MergeTwoSortedLists {
+public class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0), current = dummy;
 
