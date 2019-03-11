@@ -5,7 +5,7 @@ import DataStructure.LinkedList.ListNode;
 import java.util.HashSet;
 import java.util.Set;
 
-public class LinkedListCycle {
+public class Solution {
     public boolean hasCycle01(ListNode head) {
         if (head == null || head.next == null) {
             return false;
