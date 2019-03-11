@@ -2,7 +2,7 @@ package com.kingkong.leetcode.DeleteNodeInALinkedList;
 
 import DataStructure.LinkedList.ListNode;
 
-public class DeleteNodeInALinkedList {
+public class Solution {
     public void deleteNode(ListNode node) {
         node.val = node.next.val;
         node.next = node.next.next;
