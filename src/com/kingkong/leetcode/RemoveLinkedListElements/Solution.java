@@ -2,7 +2,7 @@ package com.kingkong.leetcode.RemoveLinkedListElements;
 
 import DataStructure.LinkedList.ListNode;
 
-public class RemoveLinkedListElements {
+public class Solution {
     public ListNode removeElements(ListNode head, int val) {
         ListNode dummy = new ListNode(0);
         dummy.next = head;
