@@ -2,7 +2,7 @@ package com.kingkong.leetcode.RemoveDuplicatesFromSortedList;
 
 import DataStructure.LinkedList.ListNode;
 
-public class RemoveDuplicatesFromSortedList {
+public class Solution {
     public ListNode deleteDuplicates(ListNode head) {
         ListNode current = head;
         while (current != null && current.next != null) {
