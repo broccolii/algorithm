@@ -2,7 +2,7 @@ package com.kingkong.leetcode.MiddleOfTheLinkedList;
 
 import DataStructure.LinkedList.ListNode;
 
-public class MiddleOfTheLinkedList {
+public class Solution {
     public ListNode middleNode01(ListNode head) {
 
         if (head == null) {
