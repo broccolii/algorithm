@@ -13,7 +13,7 @@ public class Solution {
         int p = 0, q = 1;
         int sum = 0;
 
-        for (i = 2; i < N; i++) {
+        for (int i = 2; i < N; i++) {
             sum = p + q;
             p = q;
             q = sum;
