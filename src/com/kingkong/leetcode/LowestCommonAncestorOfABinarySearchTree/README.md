@@ -24,6 +24,10 @@ Explanation: The LCA of nodes 2 and 8 is 6.
 1. 两个结点都小于根结点, 将根结点的左子树作为根结点传入继续寻找
 2. 两个结点都大于根结点, 将根结点的右子树作为根结点传入继续寻找
 3. 根结点大于其中一个结点小于另一个结点, 则根结点为需要寻找的最近公共结点
+
+假设n为结点个数,最坏情况是单侧斜树,此时树高是 n,最好是平衡树或完全二叉树高度是 logn
+时间复杂度为树高 O(h)
+递归调用栈也是额外辅助空间，使用大小就是递归深度，所以空间复杂度是 O(h) 
 ```java
 class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
@@ -42,6 +46,8 @@ class Solution {
 
 ## 解法 2
 使用迭代的方式来处理
+时间复杂度为树高 O(h)
+不需要额外空间，所以空间复杂度是 O(h) 
 ```Java
 class Solution {
   public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
