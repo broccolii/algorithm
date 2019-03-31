@@ -1,8 +1,11 @@
 package com.kingkong.leetcode;
 
+import com.kingkong.leetcode.PalindromeNumber.Solution;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+         Solution solution = new Solution();
+         solution.isPalindrome01(12);
     }
 }

@@ -1,4 +1,4 @@
-package sort;
+package Sort;
 
 public class ShellSort {
     public void sort(int[] arr) {
