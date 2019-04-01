@@ -34,11 +34,9 @@ class Solution {
         if (p.val < root.val && root.val > q.val) {
             return lowestCommonAncestor(root.left, p, q);
         }
-
         if (p.val > root.val && root.val < q.val) {
             return lowestCommonAncestor(root.right, p, q);
         }
-
         return root;
     }
 }
@@ -49,14 +47,14 @@ class Solution {
 时间复杂度为树高 O(h)
 不需要额外空间，所以空间复杂度是 O(h) 
 ```Java
-class Solution {
-  public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-    while (root != null) {
-      if (p.val < root.val && q.val < root.val) root = root.left;
-      else if (p.val > root.val && q.val > root.val) root = root.right;
-      else return root;
-    }
-    return null;
+class Solution { 
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        while (root != null) {
+            if (p.val < root.val && q.val < root.val) root = root.left;
+            else if (p.val > root.val && q.val > root.val) root = root.right;
+            else return root;
+        }
+        return null;
   }
 }
 ```
