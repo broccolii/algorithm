@@ -19,6 +19,10 @@ Explanation: 342 + 465 = 807.
 ## 解法 1
 
 通过遍历链表累加各个结点, 使用变量 `carry` 存储进位; 其中使用 dummy 虚拟头结点进行存储结果链表;
+
+时间复杂度: 需要遍历整个链表 O(n)
+空间复杂度: 需要一个dummy结点 O(1)
+
 ```java
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
