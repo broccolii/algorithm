@@ -8,6 +8,9 @@ Write a program to find the node at which the intersection of two singly linked 
 
 ## 解法 1
 由于两条链表的长度可能不相同; 因此将两条链表交叉相连, 形成长度相同的两条链表,进行遍历判断结点;
+时间复杂度: 需要遍历两链表长度和 O(m+n)
+空间复杂度: 需要使用两个变量 O(1)
+
 ```java
 class Solution {
     public ListNode getIntersectionNode01(ListNode headA, ListNode headB) {
@@ -42,6 +45,9 @@ class Solution {
 
 由于两条链表的长度可能不相同; 计算两条链表的长度差, 对长链表进行一定量的偏移, 使游标处于相对交叉点共同的位置;
 
+同上
+时间复杂度: 需要遍历两链表长度和 O(2(m+n))
+空间复杂度: 需要使用两个变量 O(1)
 ```java
 class Solution {
     public ListNode getIntersectionNode02(ListNode headA, ListNode headB) {
