@@ -21,6 +21,10 @@ ans.val = 3, ans.next.val = 4, ans.next.next.val = 5, and ans.next.next.next = N
 ## 解法 1
 
 使用快慢指针的方法, 遍历链表当出现 `fastNode == slowNode` 的时候则链表出现环;
+
+时间复杂度: O(n)
+空间复杂度: O(1)
+
 ```java
 class Solution {
     public boolean hasCycle01(ListNode head) {
@@ -48,6 +52,10 @@ class Solution {
 ## 解法 2
 
 用哈希表存储已经遍历的结点, 当出现重复结点则表示链表有环;
+
+时间复杂度: O(n)
+空间复杂度: O(n)
+
 ```java
 class Solution {
     Set<ListNode> nodeSet = new HashSet<ListNode>();
