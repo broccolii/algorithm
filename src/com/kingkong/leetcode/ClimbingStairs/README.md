@@ -22,6 +22,9 @@ Explanation: There are two ways to climb to the top.
 这个问题可以抽象的看做 爬n阶楼梯的解=爬n-1阶楼梯的解+爬n-2阶楼梯的解 -> f(n) = f(n-1)+f(n-2)
 很明显这个是一个斐波那契数列, 我们可以用迭代和递归两种方式来解答
 
+时间复杂度: 由于使用了递归最后的递归栈会重复计算 O(2n方)
+空间复杂度: 递归栈需要额外的空间 O(n)
+
 ```java
 public class Solution {
     public int climbstairsRecursive(int n) {
@@ -32,6 +35,10 @@ public class Solution {
 ```
 
 ## 解法 2
+
+时间复杂度: 只需要遍历n次 O(n)
+空间复杂度: 仅使用两个变量 O(1)
+
 ```java
 public class Solution {
     public  int climbstairsIterative(int n) {
