@@ -15,6 +15,10 @@ Output: 1->1->2->3->4->4
 
 ## 解法 1
 通过依次比较 `l1`, `l2` 两个链表中的元素, 拼接在 dummy 结点后; 当走到起其中一个链表的尾结点, 则将另一个结点直接拼至结尾;
+
+时间复杂度: 需要遍历两个链表 O(n)
+空间复杂度: 需要一个辅助的 dummy 结点 O(1)
+
 ```java
 class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
