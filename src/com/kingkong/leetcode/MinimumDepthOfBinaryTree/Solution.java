@@ -21,7 +21,7 @@ public class Solution {
     }
 
     public int minDepthIterative(TreeNode root) {
-        if (root == null) return 0;i
+        if (root == null) return 0;
 
         Queue<TreeNode> q = new LinkedList<>();
         q.add(root);
