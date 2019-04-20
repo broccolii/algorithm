@@ -17,6 +17,9 @@ Output: true
 
 ## 解法 1
 反转一半长度的链表, 通过遍历两个链表进行判断是否各个元素是否相等;
+时间复杂度: 需要遍历整个链表 O(n)
+空间复杂度: 需要pre 和 current 两个变量 O(1)
+
 ```java
 class Solution {
     public boolean isPalindrome01(ListNode head) {
@@ -58,6 +61,8 @@ class Solution {
 ## 解法 2
 
 将链表压入栈中, 依次 pop 判断结点元素是否相等;
+时间复杂度: 需要遍历整个链表 O(n)
+空间复杂度: 需要一个辅助栈 O(n)
 
 ```java
 class Solution {
