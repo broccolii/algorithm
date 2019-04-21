@@ -15,6 +15,9 @@ Output: true
 ## 解法 1
 
 转成字符串,通过判断回文字符串的方式进行判断;
+时间复杂度: O(n)
+空间复杂度: O(1)
+
 ```java
 class Solution {
     public boolean isPalindrome01(int x) {
@@ -34,7 +37,8 @@ class Solution {
 
 ## 解法 2
 由于是回文数字, 通过末项前移组成新数字进行相等判断;
-
+时间复杂度: O(n)
+空间复杂度: O(n)
 ```java
 class Solution {
     public int[] twoSum(int[] nums, int target) {
