@@ -16,6 +16,9 @@ Output: 1->2
 ## 解法 1
 
 因为题目中链表是有序的,所以依次比较相邻的两个元素即可;
+时间复杂度: 需要遍历整个链表 O(n)
+空间复杂度: O(1)
+
 ```java
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {
