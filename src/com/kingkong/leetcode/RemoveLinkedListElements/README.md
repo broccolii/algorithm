@@ -15,7 +15,10 @@ Output: 1->2->3->4->5
 
 ## 解法 1
 
-首先需要处理头结点,想要引入 dummy 结点, 依次判断如果相等则删除`cursor.next = cursor.next.next;`,否则将游标后移`cursor = cursor.next;`;
+首先需要处理头结点,需要引入 dummy 结点, 依次判断如果相等则删除`cursor.next = cursor.next.next;`,否则将游标后移`cursor = cursor.next;`;
+时间复杂度: O(n)
+空间复杂度: O(1)
+
 ```java
 class Solution {
     public ListNode removeElements(ListNode head, int val) {
