@@ -21,6 +21,9 @@ Output: 1
 ## 解法 1
 
 通过 HashSet 获取所有数字, 将其结果乘以2,再减去原始数组的和便是我们求的数;
+时间复杂度: O(n)
+空间复杂度: O(n)
+
 ```java
 class Solution {
     public int singleNumber01(int[] nums) {
@@ -42,8 +45,10 @@ class Solution {
 ## 解法 2
 
 该解法利用了相同数字异或(^)结果为0
-
+时间复杂度: O(n)
+空间复杂度: O(1)
 ```java
+class Solution {
     public int singleNumber02(int[] nums) {
         int result = 0;
         for (int num : nums) {
@@ -51,6 +56,6 @@ class Solution {
         }
 
         return result;
-    }  }
+    }
 }
 ```
