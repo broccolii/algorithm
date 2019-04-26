@@ -21,6 +21,9 @@ ans.val = 3, ans.next.val = 4, ans.next.next.val = 5, and ans.next.next.next = N
 ## 解法 1
 
 暴力解法; 遍历链表获取长度, 再遍历一半长度;
+
+时间复杂度: 需要遍历一次半链表 O(n)
+空间复杂度: 需要额外的tmp结点 O(1)
 ```java
 class Solution {
     public ListNode middleNode01(ListNode head) {
@@ -52,6 +55,9 @@ class Solution {
 ## 解法 2
 
 使用快慢指针的方法, 当快指针以每次两步到达链表尾部时, 慢指针刚好到达链表中间;
+
+时间复杂度: 只需要遍历依次链表长度 O(n)
+空间复杂度: 需要额外的 slow 和 fast 两个节点 O(1)
 ```java
 class Solution {
     public ListNode middleNode02(ListNode head) {
