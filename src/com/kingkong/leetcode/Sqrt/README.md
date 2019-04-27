@@ -18,7 +18,8 @@ Output: 2
 
 ## 解法 1
 使用牛顿迭代法进行求解
-
+时间复杂度: O(log(n))
+空间复杂度: O(1)
 ```java
 class Solution {
     public int mySqrt01(int x) {
@@ -34,6 +35,8 @@ class Solution {
 
 ## 解法 2
 使用二分法迭代求解
+时间复杂度: O(log(n))
+空间复杂度: O(1)
 ```java
 class Solution {
     public int mySqrt02(int x) {
