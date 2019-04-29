@@ -20,6 +20,10 @@ Output: 3
 使用 ^ 进行各位相加
 使用 & 得到进位, 在通过 << 1 移位, 确保进位数在正确位置想加;
 循环累计直至进位为 0; 
+
+时间复杂度: O(n)
+空间复杂度: O(1)
+
 ```java
 class Solution {
     public int getSum01(int a, int b) {
