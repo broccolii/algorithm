@@ -1,15 +1,32 @@
-package com.kingkong.leetcode.SameTree;
+# [100. Same Tree (Easy)](https://leetcode.com/problems/same-tree/)
 
-import java.util.Stack;
+## Description
 
-public class Solution {
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) { val = x; }
-    }
+Given two binary trees, write a function to check if they are the same or not.
 
+Two binary trees are considered the same if they are structurally identical and the nodes have the same value.
+
+**Example:**
+
+```
+Input:     1         1
+          / \       / \
+         2   3     2   3
+
+        [1,2,3],   [1,2,3]
+
+Output: true
+```
+
+
+## 解法 1
+
+递归解法: 分别判断两棵树的左子树相同, 右子树也相同; 
+时间复杂度: O(n)
+空间复杂度: O(n)
+
+```java
+class Solution {
     public boolean isSameTree01(TreeNode p, TreeNode q) {
         if (p == null && q == null) {
             return true;
@@ -21,7 +38,18 @@ public class Solution {
 
         return (p.val == q.val) && isSameTree01(p.left, q.left) && isSameTree01(p.right, q.right);
     }
+}
+```
 
+## 解法 2
+
+迭代解法: 使用辅助栈push进两棵树的左叶子再push进右叶子, 不断迭代判断是否相等;
+
+时间复杂度: O(n)
+空间复杂度: O(n)
+
+```java
+class Solution {
     public boolean isSameTree02(TreeNode p, TreeNode q) {
         Stack<TreeNode> stack = new Stack<>();
         stack.push(p);
@@ -53,3 +81,4 @@ public class Solution {
         return true;
     }
 }
+```

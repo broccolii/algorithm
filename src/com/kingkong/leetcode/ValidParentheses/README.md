@@ -24,6 +24,10 @@ Output: true
 
 ## 解法 1
 通过一个辅助栈,左括号入栈, 右括号出栈的方式遍历字符串, 最后判断栈是否为空;
+
+时间复杂度: O(n)
+空间复杂度: O(n)
+
 ```java
 class Solution {
     public boolean isValid01(String s) {
@@ -60,6 +64,9 @@ class Solution {
 ## 解法 2
 
 在解法 1 的基础上, 遇到左括号直接压入右括号来优化代码实现;
+
+时间复杂度: O(n)
+空间复杂度: O(n)
 
 ```java
 class Solution {

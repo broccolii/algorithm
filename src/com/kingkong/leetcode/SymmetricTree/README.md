@@ -19,7 +19,10 @@ For example, this binary tree [1,2,2,3,4,4,3] is symmetric:
 
 ## 解法 1
 
-使用递归较为简单
+递归解法: 递归比较是否对称
+时间复杂度: O(n)
+空间复杂度: O(n)
+
 ```java
 class Solution {
     public boolean isSymmetric(TreeNode l, TreeNode r) {
@@ -38,7 +41,10 @@ class Solution {
 
 ## 解法 2
 
-利用辅助栈依次压入需要比较的两树, 比较顺序是 (左.左 == 右.右 && 左.右 == 右.左);
+递归解法: 利用辅助栈依次压入需要比较的两树, 比较顺序是 (左.左 == 右.右 && 左.右 == 右.左);
+时间复杂度: O(n)
+空间复杂度: O(n)
+
 ```java
 class Solution {
     public boolean isSymmetric02(TreeNode root) {

@@ -21,6 +21,9 @@ Explanation: The sum of 2 and 7 is 9. Therefore index1 = 1, index2 = 2.
 ## 解法 1
 
 由于题目中要求数组是有序的, 可以使用两个指针向中间的方式进行加和判断;
+时间复杂度: O(n)
+空间复杂度: O(1)
+
 ```java
 class Solution {
     public int[] twoSum(int[] nums, int target) {
